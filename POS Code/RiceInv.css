@@ -1,0 +1,149 @@
+body {
+  /*background-image: url(https://images7.alphacoders.com/117/1175594.png);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #081b29;
+  /*background-repeat: no-repeat;*/
+  overflow-x: hidden;
+  overflow-y: visible;
+  min-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  /*background: #24527a;*/
+  background-color: transparent;
+  /*<-pang adjust ng pindutan*/
+  margin-top: 10px;
+  padding-left: 17%;
+}
+
+ul {
+  list-style-type: none;
+  /* background-color: #24527a;*/
+  background-color: transparent;
+  overflow: hidden;
+  list-style: none;
+}
+
+/*pag edit sa hover ng button */
+.textlink:hover {
+  background: #72959b;
+  border-radius: 8px;
+  color: black;
+  transition: 0.5s;
+}
+
+li a {
+  float: left;
+  padding: 15px;
+  text-decoration: none;
+  font-family: arial;
+  color: white;
+  text-align: center;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.textlink {
+  /* a dati*/
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  padding-top: 15px;
+}
+
+h1.Title {
+  color: white;
+  margin-bottom: 60px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.myTable {
+  margin: 20px 0;
+  align-items: center;
+}
+
+.myTable tr {
+  background-color: #37a4bd;
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+.myTable table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.myTable th,
+.myTable td {
+  padding: 10px;
+  /* border: 1px solid #ddd;*/
+  font-size: 14px;
+  border-radius: 20px;
+  color: black;
+}
+
+.myTable th {
+  background-color: gold;
+  font-weight: bold;
+}
+
+.myTable tr:hover {
+  background-color: gold;
+}
+
+/*search */
+
+.search-container {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  margin-top: 50px;
+}
+.search-container input[type="text"] {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  border-radius: 20px;
+  text-align: center;
+}
+.search-container button {
+  align-self: center;
+}
+
+.fixedbutton {
+  position: fixed;
+  background-image: url(https://w7.pngwing.com/pngs/825/110/png-transparent-computer-icons-arrow-symbol-icon-design-back-angle-text-triangle-thumbnail.png);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  bottom: 30px;
+  right: 30px;
+}

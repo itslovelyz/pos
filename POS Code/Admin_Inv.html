@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory</title>
+    <link rel="stylesheet" href="Admin_Inv.css" />
+    <link rel="icon" href="INVENTORY.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      <!--Search Function-->
+      function Search() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          (td = tr[i].getElementsByTagName("td")[0]), [1];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="centered-container">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="Admin_main.html"><img src="GPC.png" class="logo" /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1>Inventory</h1>
+    </div>
+
+    <div class="search-container">
+      <form id="myForm">
+        <input
+          type="text"
+          autocomplete="off"
+          id="myInput"
+          onkeyup="Search()"
+          placeholder="Search for Products..."
+        />
+      </form>
+    </div>
+
+    <div class="table-container">
+      <table id="myTable">
+        <tr>
+          <th>Product Name</th>
+          <th>Stock</th>
+        </tr>
+
+        <tr>
+          <td><a href="RiceInv.html">Happy Grain</a></td>
+          <td>541</td>
+        </tr>
+
+        <tr>
+          <td><a href="RiceInv.html">Happy Grain Senior</a></td>
+          <td>542</td>
+        </tr>
+
+        <tr>
+          <td><a href="RiceInv.html">Malagkit</a></td>
+          <td>656</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

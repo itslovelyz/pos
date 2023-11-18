@@ -1,0 +1,119 @@
+.input-group-text {
+  width: 85px;
+  font-size: 12px;
+  height: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.table .text-center {
+  font-size: 15px;
+  text-align: center;
+}
+
+.form-control {
+  height: 20px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: bold;
+}
+header {
+  margin: 0 0 3em;
+}
+header:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+header h1 {
+  color: red;
+  margin: 0 0 1em;
+  padding: 0.5em 0;
+}
+header span,
+header img {
+  display: block;
+  float: right;
+}
+header span {
+  margin: 0 0 1em 1em;
+  position: relative;
+}
+
+h1 {
+  font: bold 130% Lucida;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: red;
+}
+h2 {
+  font: bold 100% Times New Roman;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+h3 {
+  font: bold 50% Times New Roman;
+  text-align: center;
+  font-size: 13px;
+}
+p {
+  font: normal 80% Arial, sans-serif;
+  text-align: center;
+  font-size: 9px;
+  margin-bottom: -15px;
+}
+
+/* box text parag*/
+.one {
+  padding: 5px;
+  font-family: monospace;
+  color: red;
+  border: 2px groove red;
+  position: flex;
+  align-content: center;
+  font-size: 15px;
+}
+
+/* parag for received*/
+.two {
+  align-content: center;
+  font-size: 13px;
+}
+body {
+  font-size: 10px;
+  vertical-align: middle;
+  padding: 5px;
+}
+input[type="text"],
+input[type="nummber"],
+input[type="text"] {
+  font-size: 10;
+  vertical-align: middle;
+  text-align: center;
+}
+td,
+tr,
+th {
+  height: 15px;
+  text-align: center;
+}
+.btn {
+  font-size: 8px;
+}
+
+.input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
+  width: 1%;
+  min-width: 0;
+  text-align: center;
+}

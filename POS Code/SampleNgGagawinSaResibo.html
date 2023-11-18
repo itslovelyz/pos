@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Autocomplete</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#item").keyup(function(){
+        var query = $(this).val();
+        if(query != "") {
+            $.ajax({
+                url:"fetch.php",
+                method:"POST",
+                data:{query:query},
+                success:function(data) {
+                    $("#item-list").fadeIn();
+                    $("#item-list").html(data);
+                }
+            });
+        }
+    });
+
+    $(document).on('click', 'li', function(){
+        $("#item").val($(this).text());
+        $("#item-list").fadeOut();
+    });
+
+});
+</script>
+</head>
+<body>
+    <div>
+        <label>Search for items:</label>
+        <input type="text" id="item" name="item" autocomplete="off" />
+        <ul id="item-list"></ul>
+    </div>
+</body>
+</html>

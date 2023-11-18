@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DELIVERY RECEIPT</title>
+    <link rel="stylesheet" href="Admin_DR.css" />
+    <link rel="icon" href="DR.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      <!--Search Function-->
+      function Search() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          (td = tr[i].getElementsByTagName("td")[0]), [1];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- navigation button -->
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="Admin_main.html"><img src="GPC.png" class="logo" /></a>
+        </li>
+        <li><a href="Admin_main.html" class="textlink">Home</a></li>
+        <li><a href="Admin_Inv.html" class="textlink">Inventory</a></li>
+        <li><a href="Admin_DR.html" class="textlink">Delivery Receipt</a></li>
+        <li><a href="AdminRe.html" class="textlink">Receiving Receipt</a></li>
+        <li><a href="Price.html" class="textlink">Price Change</a></li>
+        <li><a href="Admin_SI.html" class="textlink">Sales Invoice</a></li>
+      </ul>
+    </nav>
+
+    <!-- Headings-->
+    <h1 class="Title">Delivery Receipt</h1>
+
+    <!-- labili kwak kwak
+         search bar for DR -->
+    <div class="search-container">
+      <form id="myForm">
+        <input
+          type="text"
+          autocomplete="off"
+          id="myInput"
+          onkeyup="Search()"
+          placeholder="Search Customer"
+        />
+      </form>
+    </div>
+
+    <!-- Add DR Button-->
+
+    <div class="add-btn">
+      <button onclick="location.href='testing.html'">ADD DR</button>
+    </div>
+
+    <div class="myTable">
+      <table id="myTable">
+        <tr>
+          <th>Customer's Name</th>
+          <th>Address</th>
+          <th>Date</th>
+          <th>Recorded</th>
+        </tr>
+
+        <tr>
+          <td><a href="Admin_main.html">Steve</a></td>
+          <td>Blk 22 lot 1 Pasay City</td>
+          <td>11-13-23</td>
+          <td>
+            <label class="toggle">
+              <input class="toggle-input" type="checkbox" />
+              <span class="toggle-label" data-off="👎" data-on="👍"></span>
+              <span class="toggle-handle"></span>
+            </label>
+          </td>
+        </tr>
+        <!-- add more rows here -->
+
+        <tr>
+          <td><a href="Admin_main.html"> Allen </a></td>
+          <td>Blk 22 lot 1 Pasay City</td>
+          <td>11-13-23</td>
+          <td>
+            <label class="toggle">
+              <input class="toggle-input" type="checkbox" />
+              <span class="toggle-label" data-off="👎" data-on="👍"></span>
+              <span class="toggle-handle"></span>
+            </label>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

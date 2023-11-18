@@ -1,0 +1,59 @@
+body{
+    font-style: italic;
+    background-image: radial-gradient(lightgreen,red );
+}
+.container{
+    align-items: center;
+    text-align:center;
+    padding: 15px;
+}
+
+h1{
+    text-align: center;
+    color: gold;
+    font-size: 50px;
+}
+
+select {
+    width: 150px;
+    height: 21px;
+    margin: 5px;
+    text-align: center;
+}
+input[type=text] {
+    height: 21px;
+    margin: 5px;
+    text-align: center;
+    font-family: monospace;
+}
+button{
+    padding: 15px;
+    align-self: center;
+    width: 300px;
+    background-color: lightgreen;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+    font-family: monospace;
+}
+
+button:hover{
+    opacity: 1;
+    font-size: x-large;
+    cursor: pointer;
+}
+table{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 960px;
+    color: black;
+    
+}
+
+th, tr, td {
+    border: 2px solid black;
+    font-size: 18px;
+}

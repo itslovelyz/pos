@@ -1,0 +1,120 @@
+/*.navbar{
+    align-items: center;
+    flex: content;
+  
+    text-align: center;
+}
+
+button{
+    padding: 15px;
+    margin: 10px;
+    background-color: lightgreen;
+}
+h3{
+    text-align: center;
+    font-size: 70px;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-image: linear-gradient(gold, red);
+}
+
+body{
+    background-image: url(https://media1.cgtrader.com/variants/XPnA9uSMcYwQNDKSpfsh2Hdg/e44aa6a6359827c9089792cde0c079681b83d3b5c3037cc0525c25607e54355b/Untitled.skpVVVVVV.skphijo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+/* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a, {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    background-color: #7EE4D6 ;
+    border-radius: 15px;
+    border-color: azure;
+
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_linkes li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li,a {
+    transition: all 0.3s case 0s;
+}
+
+.nav links a: hover {
+    color: red;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s case 0s;
+}
+h3{
+    text-align: left ;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-image: linear-gradient(gold, red);
+}
+
+body{
+    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);;
+     
+}

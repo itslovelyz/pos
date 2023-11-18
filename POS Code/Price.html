@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Change</title>
+    <link rel="stylesheet" href="Price.css" />
+    <link rel="icon" href="house.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      <!--Search Function-->
+      function Search() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="centered-container">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="Admin_main.html"><img src="GPC.png" class="logo" /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="search-container">
+      <form id="myForm">
+        <input
+          type="text"
+          autocomplete="off"
+          id="myInput"
+          onkeyup="Search()"
+          placeholder="Search Products..."
+        />
+        <button onclick="location.href='Price.html'" class="update">
+          Update Price
+        </button>
+      </form>
+    </div>
+    <div class="table-container">
+      <table id="myTable">
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td><a href="Price.html">Happy Grain</a></td>
+          <td contenteditable>1541</td>
+        </tr>
+        <tr>
+          <td><a href="Price.html">Happy Grain Senior</a></td>
+          <td contenteditable>1542</td>
+        </tr>
+        <tr>
+          <td><a href="Price.html"> Malagkit </a></td>
+          <td contenteditable>1656</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

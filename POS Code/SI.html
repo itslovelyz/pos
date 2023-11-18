@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     <!-- Custom Style -->
+     <link rel="stylesheet" href="SI.css">
+    
+     <script src="https://code.jquery.com/jquery-3.6.2.slim.js" integrity="sha256-OflJKW8Z8amEUuCaflBZJ4GOg4+JnNh9JdVfoV+6biw=" crossorigin="anonymous"></script>
+    
+    <!-- For Invoice  -->
+    <script src="SI.js"></script>
+    
+    <title>Sales Invoice</title>
+    
+
+</head>
+
+<body>
+
+    <div class="my-5 page" size="A5">
+    <div class="p-5">
+        
+<section class="top-content bb d-flex justify-content-between">
+                    
+    <div class="logo">
+        <img src="GPC.png" alt="logo" class="img-fluid">
+    </div>
+
+    <!-- dito yung parang logo ng sales invoice-->
+    <div class="top-left">
+        <div class="graphic-path">
+        <p>Sales Invoice</p>
+        </div>
+                        
+        <div class="position-relative">
+        <p>Invoice No. <span>00001</span></p>
+         </div>
+    </div>
+</section>
+ 
+    <section class="store-user mt-3"> <!-- dito adjust lines sa taas -->
+
+    <div class="col-12"> <!-- dating col 10-->
+        <div class="row bb pb-1"> 
+            <div class="col-7">
+                                    
+            <p> Sold to: <span contenteditable> Abdul Jakil </span> </p>
+            <p> Address: <span contenteditable> Pasay City </span> </p>
+            <p> Business type: <span contenteditable> Hotel </span> </p>
+    </div>
+                                    
+                                    
+    <div class="col-5">
+       <form action="/action_page.php">
+        <label for="date1">Date:</label>
+            <input type="date" id="date1" name="date1">
+            <p> TIN/SC TIN: <span contenteditable> 000-255-9898-00</p>
+       </form>
+    </div>
+    </div>  
+           
+        <!-- dito yung lines before sa table -->
+       
+        </div>
+        
+    </section>
+    
+
+               
+    <table class="table table-bordered">
+    <thead class="table-success">
+    
+        <tr> 
+            <th scope="col" class="text-center">Qty</th> 
+            <th scope="col" class="text-center">Unit</th>
+            <th scope="col" class="text-center">Product Name</th>
+            <th scope="col" class="text-center">Rate</th>
+            <th scope="col" class="text-center">Amount</th>
+
+
+        <th scope="col" class="NoPrint">                         
+            <button type="button" class="btn-plus" onclick="BtnAdd()">+</button>  
+        </th>
+
+        </tr>
+        </thead>
+
+
+        <tbody id="TBody">
+        
+        <tr id="TRow" class="d-none">
+                          
+            <td width="100"><input type="number" class="form-control text-center" name="qty" onchange="Calc(this);"></td>
+            <td width="90"><input type="text" class="form-control text center" name="unit" autocomplete="off"> </td>
+            <td width="190"><input type="text" class="form-control text-center" name="product" autocomplete="off" ></td>
+            <td width="110"><input type="number" class="form-control text-center" name="rate"  onchange="Calc(this);"></td>
+            <td witdh="100"><input type="number" class="form-control text-center" name="amt" value="0" disabled=""></td>
+            <td class="NoPrint"><button type="button" class="btn-x" onclick="BtnDel(this)">x</button></td>
+            
+        </tr>
+        </tbody>
+        </table>
+
+        <!-- TOTAL FOR INVOICE -->
+        <div class="col-6">
+                        
+            <div class="input-group mb-3">
+                <span class="input-group-text" >Total</span>
+                <input type="number" class="form-control text-end" id="FTotal" name="Total" disabled="">
+            </div>
+                        
+                <button type="print" class="btn-print" onclick="GetPrint()" >Print</button><!--onclick="GetPrint()-->
+            </div>
+        </div>
+
+
+        <p class="one"> Received the above goods in good <br> order and condition</p>
+        <p class="two"> Buyer assumes full responsibility for payment of value 
+        <br> of above articles at 12% interest per annum for overdue 
+        <br> account plus all expenses in case of litigation. </p>
+        <p class="three"> Received by: ____________________ </p>
+        <p class="four"> "THIS DOCUMENT IS NOT VALID FOR CLAIMING INPUT TAXES."</p>
+
+</body>
+</html>

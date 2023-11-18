@@ -1,0 +1,116 @@
+form {
+  margin: auto;
+  background: transparent;
+  /*background-image: url(https://steamuserimages-a.akamaihd.net/ugc/919169528587445491/0DD8BEB8B1311E4041FE085FD71A92E224CECAB4/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    */
+  
+  text-align: center;
+  border-radius: 20px;
+  opacity: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*lalagay ng pic na bg tapos gagawing transparent yung form
+  }
+  
+  /* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid black;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+  font-family: monospace;
+  background-color: transparent;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04aa6d;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 20px;
+  font-family: monospace;
+  letter-spacing: 3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 120px;
+  border-radius: 120px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.label {
+  padding: 16px;
+  text-align: center;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+:placeholder-shown {
+  text-align: center;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
+h1 {
+  text-align: center;
+  font: 40px bolder;
+  margin-bottom: 40px;
+  color: gold;
+  font-style: monospace;
+}
+
+body {
+  background-image: url(bg2.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 40px;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-family: monospace;
+  overflow-y: hidden;
+}
+::placeholder {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 3;
+}

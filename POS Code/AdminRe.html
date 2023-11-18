@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Invoce</title>
+    <link rel="stylesheet" href="Admin_SI.css" />
+    <link rel="icon" href="INVOICE2.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="Admin_main.html"><img src="GPC.png" class="logo" /></a>
+        </li>
+        <!-- dito yung ano mga nav button -->
+      </ul>
+    </nav>
+    <!-- Headings-->
+    <h1 class="Title">Receiving</h1>
+    <!-- search bar for dr -->
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search Supplier" name="search" />
+      </form>
+    </div>
+    <!-- Add DR Button-->
+    <div class="add-btn">
+      <button onclick="location.href='ReceivingTest.html'">ADD SI</button>
+    </div>
+    <div class="table-container">
+      <table>
+        <tr>
+          <th>Supplier's Name</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td><a href="Admin_main.html">Steve Ong</a></td>
+          <td>11-13-23</td>
+          <!--add more rows here-->
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

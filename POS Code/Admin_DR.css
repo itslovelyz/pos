@@ -1,0 +1,262 @@
+body {
+  /*background-image: url(https://images7.alphacoders.com/117/1175594.png);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #081b29;
+  /*background-repeat: no-repeat;*/
+  overflow-x: hidden;
+  overflow-y: visible;
+  min-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  /*background: #24527a;*/
+  background-color: transparent;
+  /*<-pang adjust ng pindutan*/
+  margin-top: 10px;
+  padding-left: 17%;
+}
+
+ul {
+  list-style-type: none;
+  /* background-color: #24527a;*/
+  background-color: transparent;
+  overflow: hidden;
+  list-style: none;
+}
+
+/*pag edit sa hover ng button */
+.textlink:hover {
+  background: #72959b;
+  border-radius: 8px;
+  color: black;
+  transition: 0.5s;
+}
+
+li a {
+  float: left;
+  padding: 15px;
+  text-decoration: none;
+  font-family: arial;
+  color: white;
+  text-align: center;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.textlink {
+  /* a dati*/
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  padding-top: 15px;
+}
+
+h1.Title {
+  color: white;
+  margin-bottom: 60px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 40px;
+}
+
+/*tables */
+.myTable {
+  margin: 20px 0;
+  align-items: center;
+}
+
+.myTable tr {
+  background-color: #37a4bd;
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+.myTable table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.myTable th,
+.myTable td {
+  padding: 10px;
+  /* border: 1px solid #ddd;*/
+  font-size: 14px;
+  border-radius: 20px;
+  color: black;
+}
+
+.myTable th {
+  background-color: gold;
+  font-weight: bold;
+}
+
+.myTable tr:hover {
+  background-color: gold;
+}
+
+/*search */
+.search-container input[type="text"] {
+  margin-bottom: 2px;
+  width: 15%;
+  margin-left: 50%;
+  margin-right: 20%;
+  padding: 9px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+/*add button */
+.add-btn {
+  display: absolute;
+  margin-top: -40px;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-left: 630px;
+  padding-top: 1.5px;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  padding: 9px;
+  border-radius: 20px;
+  width: 120px;
+  height: 39px; /*39*/
+  font-size: 13px;
+  align-content: center;
+  /*background-image: url(https://www.icegif.com/wp-content/uploads/2022/01/icegif-1480.gif);
+    background-position: center;
+    background-size: 100px;
+    */color: black;
+    font-size: 13px;
+    font-family: monospace;
+}
+
+button:hover {
+  background: #37a4bd;
+  border-radius: 20px;
+  color: black;
+  transition: 0.5s;
+  color: black;
+}
+
+.toggle {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 20px;
+  padding: 3px;
+  margin: auto;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.toggle-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.toggle-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 15px;
+  background: red;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12),
+    inset 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-label:before,
+.toggle-label:after {
+  position: absolute;
+  top: 50%;
+  color: black;
+  margin-top: -0.5em;
+  line-height: 1;
+}
+
+.toggle-label:before {
+  content: attr(data-off);
+  right: 5px;
+  color: #fff;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.toggle-label:after {
+  content: attr(data-on);
+  left: 5px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+.toggle-input:checked ~ .toggle-label {
+  background: green;
+}
+
+.toggle-input:checked ~ .toggle-label:before {
+  opacity: 0;
+}
+
+.toggle-input:checked ~ .toggle-label:after {
+  opacity: 1;
+}
+
+.toggle-handle {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 17px;
+  height: 17px;
+  background: linear-gradient(to bottom, #ffffff 40%, #f0f0f0);
+  border-radius: 50%;
+}
+
+.toggle-handle:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+  width: 3px;
+  height: 3px;
+}
+.toggle-input:checked ~ .toggle-handle {
+  left: 32px;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Transition*/
+.toggle-label,
+.toggle-handle {
+  transition: All 0.5s ease;
+  -webkit-transition: All 0.5s ease;
+  -moz-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+}
